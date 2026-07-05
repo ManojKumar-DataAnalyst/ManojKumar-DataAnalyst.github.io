@@ -1,89 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-    
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Manoj Kumar | Data Analyst</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 <style>
     body {
         margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial;
-        background: #f6f7f9;
+        font-family: "Inter", sans-serif;
+        background: #f5f7fb;
         color: #111;
-        line-height: 1.6;
     }
 
     .container {
-        max-width: 900px;
+        max-width: 1000px;
         margin: auto;
         padding: 60px 20px;
     }
 
+    /* HERO */
+    .hero {
+        text-align: left;
+        padding: 60px 0;
+    }
+
+    .hero h1 {
+        font-size: 52px;
+        margin: 0;
+    }
+
+    .hero p {
+        font-size: 18px;
+        color: #555;
+        margin-top: 10px;
+        max-width: 600px;
+    }
+
+    .badge {
+        display: inline-block;
+        padding: 6px 12px;
+        background: #e8edff;
+        color: #2b4eff;
+        border-radius: 20px;
+        font-size: 13px;
+        margin-top: 10px;
+    }
+
+    /* SECTIONS */
+    .section {
+        margin-top: 50px;
+    }
+
+    .section h2 {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    /* CARDS */
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 15px;
+    }
+
     .card {
         background: white;
-        padding: 25px;
+        padding: 20px;
         border-radius: 14px;
-        margin-bottom: 20px;
-        box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+        transition: 0.3s;
     }
 
-    h1 {
-        font-size: 42px;
-        margin-bottom: 5px;
-    }
-
-    h2 {
-        margin-top: 0;
-        font-size: 22px;
-        color: #444;
+    .card:hover {
+        transform: translateY(-5px);
     }
 
     .tag {
         display: inline-block;
-        background: #eef2ff;
-        color: #3730a3;
-        padding: 6px 10px;
-        border-radius: 8px;
-        margin: 5px 5px 0 0;
-        font-size: 13px;
+        font-size: 12px;
+        background: #f0f0f0;
+        padding: 5px 10px;
+        border-radius: 10px;
+        margin: 3px;
     }
 
     a {
-        color: #2563eb;
+        color: #2b4eff;
         text-decoration: none;
+        font-weight: 500;
     }
 
-    .header {
-        text-align: center;
-        margin-bottom: 40px;
-    }
-
-    .subtitle {
-        color: #666;
-        font-size: 16px;
-    }
-
-    .btn {
-        display: inline-block;
-        padding: 10px 16px;
-        background: black;
+    /* CONTACT */
+    .contact {
+        background: #111;
         color: white;
-        border-radius: 10px;
-        margin-top: 10px;
+        padding: 40px;
+        border-radius: 16px;
+        margin-top: 60px;
     }
 
-    .grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 15px;
-    }
-
-    @media (min-width: 700px) {
-        .grid {
-            grid-template-columns: 1fr 1fr;
-        }
+    .contact a {
+        color: #7aa2ff;
     }
 
 </style>
@@ -93,68 +113,62 @@
 
 <div class="container">
 
-    <!-- HEADER -->
-    <div class="header">
+    <!-- HERO -->
+    <div class="hero">
         <h1>Manoj Kumar</h1>
-        <h2>Data Analyst | Business Analyst</h2>
-        <p class="subtitle">
-            SQL • Python • Power BI • ETL • Data Visualization
-        </p>
+        <span class="badge">Data Analyst | Business Analyst</span>
 
-        <a class="btn" href="resume.pdf" target="_blank">Download Resume</a>
+        <p>
+            Turning data into insights using SQL, Python, Power BI, and ETL pipelines.
+            Currently based in Germany and actively looking for Data Analyst roles.
+        </p>
     </div>
 
     <!-- ABOUT -->
-    <div class="card">
-        <h2>About Me</h2>
-        <p>
-            I am a Data Analyst based in Germany with experience in ETL testing,
-            data analysis, and dashboard development. I enjoy turning raw data into
-            meaningful business insights.
-        </p>
+    <div class="section">
+        <h2>About</h2>
+        <div class="card">
+            I am a Data Analyst with experience in ETL testing, reporting, and dashboard development.
+            I enjoy solving business problems using data and building automated analytics systems.
+        </div>
     </div>
 
     <!-- SKILLS -->
-    <div class="card">
+    <div class="section">
         <h2>Skills</h2>
-
-        <span class="tag">SQL</span>
-        <span class="tag">Python</span>
-        <span class="tag">Power BI</span>
-        <span class="tag">Excel</span>
-        <span class="tag">ETL</span>
-        <span class="tag">Data Visualization</span>
-        <span class="tag">PostgreSQL</span>
-        <span class="tag">GitHub</span>
+        <div class="card">
+            <span class="tag">SQL</span>
+            <span class="tag">Python</span>
+            <span class="tag">Power BI</span>
+            <span class="tag">Excel</span>
+            <span class="tag">ETL</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">Airflow</span>
+            <span class="tag">Docker</span>
+        </div>
     </div>
 
     <!-- PROJECTS -->
-    <div class="card">
+    <div class="section">
         <h2>Projects</h2>
 
         <div class="grid">
 
             <div class="card">
-                <b>Sales Dashboard (Power BI)</b>
-                <p>Interactive dashboard for sales performance analysis.</p>
+                <h3>Sales Dashboard</h3>
+                <p>Power BI dashboard analyzing revenue trends.</p>
                 <a href="#">View Project →</a>
             </div>
 
             <div class="card">
-                <b>ETL Pipeline (Python + Airflow)</b>
-                <p>Automated data pipeline from Kaggle to PostgreSQL.</p>
+                <h3>ETL Pipeline</h3>
+                <p>Automated data pipeline using Airflow + PostgreSQL.</p>
                 <a href="#">View Project →</a>
             </div>
 
             <div class="card">
-                <b>AML Data Analysis</b>
-                <p>Exploratory analysis for fraud detection patterns.</p>
-                <a href="#">View Project →</a>
-            </div>
-
-            <div class="card">
-                <b>Portfolio Optimization (Thesis)</b>
-                <p>Optimization model using Bayesian Neural Networks.</p>
+                <h3>AML Analysis</h3>
+                <p>Fraud detection pattern analysis using Python.</p>
                 <a href="#">View Project →</a>
             </div>
 
@@ -162,7 +176,7 @@
     </div>
 
     <!-- CONTACT -->
-    <div class="card">
+    <div class="contact">
         <h2>Contact</h2>
         <p>Email: your-email@example.com</p>
         <p>
